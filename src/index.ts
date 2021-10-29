@@ -30,8 +30,8 @@ import $ from "jquery";
 
 function updateGraph(): void {
     $.get("http://71.207.151.214:4321", (data, status) => {
-        console.log("got data! ", data);
-        let msg = JSON.parse(data) as SerializedGraph;
+        console.log("got data!");
+        let msg = data as SerializedGraph;
         renderGraph(msg);
     });
 }
