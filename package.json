@@ -12,7 +12,7 @@
   "scripts": {
     "start": "parcel src/index.html --open",
     "build-dev": "parcel build src/index.html --no-minify",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./ && printf 'nathanwhit.xyz' > dist/CNAME",
     "prebuild": "rm -rf dist/*",
     "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
