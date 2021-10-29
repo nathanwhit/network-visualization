@@ -29,7 +29,7 @@ import $ from "jquery";
 // };
 
 function updateGraph(): void {
-    $.get("http://71.207.151.214:4321", (data, status) => {
+    $.get("http://ec2-3-80-100-206.compute-1.amazonaws.com:4321", (data, status) => {
         console.log("got data!");
         let msg = data as SerializedGraph;
         renderGraph(msg);
